@@ -22,12 +22,12 @@ jobs:
 
       - uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: ${{ secrets.DOCKER_USERNAME }}/pod-of-cast
+          images: ${{ secrets.DOCKER_USERNAME }}/pod-of-cast:latest
 
       - uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
         with:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/pod-of-cast
+          tags: ${{ secrets.DOCKER_USERNAME }}/pod-of-cast:latest
 
