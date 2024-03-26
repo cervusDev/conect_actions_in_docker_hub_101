@@ -29,4 +29,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
+          tags: ${{ secrets.DOCKER_USERNAME }}/pod-of-cast:0.1
 
