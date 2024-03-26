@@ -26,5 +26,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ secrets.DOCKER_USERNAME }}/pod-of-cast:0.1
+          tags: cervusdev/pod-of-cast:latest
 
